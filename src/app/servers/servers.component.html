@@ -1,0 +1,15 @@
+<h3>Server Name</h3>
+<input class="form-control" type="text" (input)="onInput($event)" />
+<input class="form-control" type="text" [(ngModel)]="serverName" />
+<p>{{ serverName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="!enableServer"
+  (click)="onBtnClick()"
+>
+  Add Server
+</button>
+<p [innerText]="enableServer"></p>
+<p>{{ serverCreationSentence }}</p>
+<app-server></app-server>
+<app-server></app-server>
