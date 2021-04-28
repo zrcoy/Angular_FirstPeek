@@ -19,7 +19,8 @@ export class ServersComponent implements OnInit {
   ngOnInit(): void {}
 
   onBtnClick() {
-    this.serverCreationSentence = 'Server Created!';
+    this.serverCreationSentence =
+      'Server with the name: ' + this.serverName + ' is Created!';
   }
 
   onInput(event: any) {

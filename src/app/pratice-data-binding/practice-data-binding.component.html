@@ -1,0 +1,5 @@
+<br /><br /><br />
+<h1>Practice area for data binding</h1>
+<input type="text" class="forms-control" [(ngModel)]="userName" />
+<p>{{ userName }}</p>
+<button [disabled]="userName === ''" (click)="userName = ''">Reset</button>
