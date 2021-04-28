@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { PracticeDataBindingComponent } from './pratice-data-binding/practice-data-binding.component';
+import { PracticeBuiltInDirectiveComponent } from './practice-built-in-directive/practice-built-in-directive.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { PracticeDataBindingComponent } from './pratice-data-binding/practice-da
     WarningAlertComponent,
     SuccessAlertComponent,
     PracticeDataBindingComponent,
+    PracticeBuiltInDirectiveComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],

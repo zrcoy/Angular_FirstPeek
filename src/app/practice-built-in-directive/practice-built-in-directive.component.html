@@ -1,0 +1,15 @@
+<br /><br /><br />
+<h1>Practice area for built in directives</h1>
+<button (click)="onClick()">Display Details</button>
+<p *ngIf="show; else notShowingDetails">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ad.
+</p>
+<ng-template #notShowingDetails>
+  <p>No details</p>
+</ng-template>
+<p
+  *ngFor="let count of countArray"
+  [ngClass]="{ itemsLargerThanFive: count >= 5 }"
+>
+  {{ count }}
+</p>

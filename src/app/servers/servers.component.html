@@ -10,7 +10,11 @@
   Add Server
 </button>
 <p [innerText]="enableServer"></p>
-<p>{{ serverCreationSentence }}</p>
-<app-server></app-server>
-<app-server></app-server>
+<!-- <p>{{ serverCreationSentence }}</p> -->
+<p *ngIf="isServerCreated; else noServer">{{ serverCreationSentence }}</p>
+<ng-template #noServer>
+  <p>No server right now.</p>
+</ng-template>
+<app-server *ngFor="let server of servers"></app-server>
 <app-practice-data-binding></app-practice-data-binding>
+<app-practice-built-in-directive></app-practice-built-in-directive>
